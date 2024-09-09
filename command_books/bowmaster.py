@@ -1,5 +1,3 @@
-"""A collection of all commands that Adele can use to interact with the game. 	"""
-
 from src.common import config, settings, utils
 import time
 import math
