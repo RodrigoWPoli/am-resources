@@ -1,0 +1,10 @@
+$, target=move_tolerance, value=0.09
+$, target=buff_cooldown, value=250
+
+@, label=main
+
+@, label=summons
+*, x=0.808, y=0.344, frequency=1, skip=False, adjust=True
+    Fountain
+*, x=0.821, y=0.185, frequency=1, skip=False, adjust=True
+    ErdaFountain, direction=left

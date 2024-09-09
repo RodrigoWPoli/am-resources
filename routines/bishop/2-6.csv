@@ -1,0 +1,41 @@
+$, target=buff_cooldown, value=210
+$, target=move_tolerance, value=0.07
+
+@, label=summons
+*, x=0.296, y=0.484, frequency=1, skip=False, adjust=False
+    Wait, duration=0.3
+    Genesis
+    Wait, duration=0.2
+*, x=0.283, y=0.371, frequency=1, skip=False, adjust=True
+    Fountain
+    Wait, duration=0.6
+    Walk, direction=right, duration=1
+    Walk, direction=left, duration=1
+    Fall, distance=0.05
+    Wait, duration=0.1
+    ErdaFountain, direction=right
+*, x=0.605, y=0.484, frequency=1, skip=False, adjust=False
+    Door
+*, x=0.695, y=0.484, frequency=1, skip=False, adjust=True
+    Teleport, direction=right, jump=False
+    Teleport, direction=left, jump=False
+*, x=0.692, y=0.358, frequency=1, skip=False, adjust=True
+
+@, label=main
+*, x=0.692, y=0.358, frequency=1, skip=False, adjust=False
+    BigBang, repetitions=3
+    Wait, duration=0.2
+    BigBang, repetitions=3
+    Wait, duration=0.2
+    BigBang, repetitions=3
+    Wait, duration=0.2
+*, x=0.770, y=0.358, frequency=3, skip=True, adjust=False
+    Teleport, direction=right, jump=False
+    Wait, duration=0.2
+    BigBang, repetitions=1
+    Wait, duration=0.2
+    Teleport, direction=left, jump=False
+    Wait, duration=0.2
+    PeaceMaker, direction=left, attacks=1, repetitions=1
+>, label=summons, frequency=9, skip=True
+>, label=main, frequency=1, skip=False

@@ -1,0 +1,5 @@
+*, x=0.383, y=0.306, frequency=1, skip=False, adjust=False
+    ArrowPlatterFixed, direction=right
+    Hurricane
+    Wait, duration=5
+    Hurricane
